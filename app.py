@@ -1475,4 +1475,4 @@ if __name__ == '__main__':
         cleanup_thread.start()
     
     is_debug = os.environ.get('FLASK_ENV') == 'development'
-    app.run(port=8000, debug=is_debug)
+    app.run(host='0.0.0.0', port=8000, debug=is_debug)
